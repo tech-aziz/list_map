@@ -1,6 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AnotherPage extends StatefulWidget {
   String name;
@@ -23,12 +24,12 @@ class _AnotherPageState extends State<AnotherPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Details about card"),
+        title: Text("Details about card",style: TextStyle(fontSize: 20.sp),),
       ),
       body: Column(
         children: [
           Container(
-            height: 100,
+            height: 100.h,
             width: double.infinity,
             color: Colors.green,
             child: Row(
